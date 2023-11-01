@@ -37,7 +37,7 @@ a:focus {
 
 a:focus,
 a:hover {
-  color: #3143ef;
+  color: #407302;
   text-decoration: none !important;
 }
 
@@ -45,23 +45,23 @@ a,
 button,
 input {
   outline: medium none !important;
-  color: #3143ef;
+  color: #407302;
 }
 
 *::-moz-selection {
-  background: #3143ef;
+  background: #407302;
   color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #3143ef;
+  background: #407302;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #3143ef;
+  background: #407302;
   color: #fff;
   text-shadow: none;
 }
@@ -305,12 +305,12 @@ span,
 }
 
 [data-overlay].theme-overlay:before {
-  background-color: #3143ef;
+  background-color: #407302;
 }
 
 [data-overlay].grediant-overlay:before {
-  background: #3143ef;
-  background: linear-gradient(-58deg, #3143ef 70%, #fff 100%);
+  background: #407302;
+  background: linear-gradient(-58deg, #407302 70%, #fff 100%);
 }
 
 [data-overlay="1"]:before {
@@ -394,12 +394,12 @@ span,
   transition: all 0.3s ease-in-out;
   font-size: 32px;
   color: #ffffff;
-  background: #3143ef;
+  background: #407302;
 }
 
 .scroll-top a:hover,
 .scroll-top a:focus {
-  color: #3143ef;
+  color: #407302;
   background: #ffffff;
 }
 
@@ -493,13 +493,13 @@ span,
 
 .topbar-link i {
   margin-right: 10px;
-  color: #3143ef;
+  color: #407302;
   font-size: 30px;
   vertical-align: middle;
 }
 
 .topbar-link a:hover {
-  color: #3143ef;
+  color: #407302;
 }
 
 .header-top {
@@ -608,7 +608,7 @@ span,
 }
 
 .cart-badge {
-  background-color: #3143ef;
+  background-color: #407302;
   border-radius: 50%;
   color: #fff;
   font-size: 10px;
@@ -696,7 +696,7 @@ span,
 
 #header-wrap {
   position: relative;
-  background: #3143ef;
+  background: #407302;
   width: 1430px;
 }
 
@@ -711,7 +711,7 @@ span,
   left: 0;
 
   z-index: 999 !important;
-  background: #3143ef;
+  background: #407302;
   animation: smoothScroll 1s forwards;
 }
 
@@ -965,7 +965,7 @@ span,
   }
   .header-3 .navbar-nav .nav-link:hover,
   .header-3 .navbar-nav .nav-item .nav-link.active {
-    background: #3143ef;
+    background: #407302;
   }
   .header-2 .navbar-nav .nav-link {
     padding: 0 10px !important;
@@ -989,7 +989,7 @@ span,
 .header-3 .topbar-link i,
 .header-4 .topbar-link i {
   font-size: 20px;
-  color: #3143ef;
+  color: #407302;
 }
 
 .header-4 .header-top {
@@ -1080,7 +1080,7 @@ span,
   height: 2px;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #3143ef;
+  background: #407302;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1095,7 +1095,7 @@ span,
   content: "";
   width: 40px;
   height: 2px;
-  background: #3143ef;
+  background: #407302;
   position: absolute;
   right: 0;
   -webkit-transition: 0.1s;
@@ -1154,7 +1154,7 @@ span,
   content: "";
   width: 40px;
   height: 2px;
-  background: #3143ef;
+  background: #407302;
   position: absolute;
   left: 0;
 }
@@ -1311,7 +1311,7 @@ span,
 
 .breadcrumb-item.active,
 .breadcrumb-item a:hover {
-  color: #3143ef;
+  color: #407302;
 }
 
 .page-title-pattern {
