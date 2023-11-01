@@ -221,16 +221,16 @@ span,
   content: "";
   position: absolute;
   background-color: #fd5b03;
-  top: 5px;
+  top: 150px;
   left: 0px;
-  height: 150px;
-  width: 0px;
+  height: 10px;
+  width: 60px;
   z-index: 0;
   opacity: 1;
   -webkit-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
   -webkit-animation: loader4 30s ease-in-out infinite;
-  animation: loader4 10s ease-in-out infinite;
+  animation: loader4 7s ease-in-out infinite;
 }
 
 .loader:after {
