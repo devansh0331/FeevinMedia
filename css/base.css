@@ -204,17 +204,17 @@ span,
 
 .loader {
   position: relative;
-  width: 100vw;
+  width: 300px;
   /* height: 10px; */
   top: 25%;
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
 
   top: -webkit-calc(50% - 10px);
   top: calc(50% - 20px);
   left: 25%;
-  left: -webkit-calc(50% - 150px);
-  left: calc(50% - 150px);
-  margin-left: 3rem;
+  left: -webkit-calc(50% - 100px);
+  left: calc(50% - 100px);
+  /* margin-left: 3rem; */
 }
 
 .loader:before {
