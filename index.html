@@ -347,12 +347,12 @@
           <form id="contact-form" class="row gform"  method="post" data-email="ca.caganesh@gmail.com" action="https://script.google.com/macros/s/AKfycbzHgMq43woLefosaAhgRK65SumrYEK94qgrhvZQsRzlzOZ_h-ddE_Rnusl2NSIQ0S95/exec" novalidate="true">
             <div id="formmessage"></div>
             <div class="form-group col-md-6 has-error has-danger">
-              <input id="form_name" type="text" for="firstname" name="firstname" class="form-control" placeholder="First Name"  data-error="Name is required.">
-              
+              <input id="form_name" type="text" for="firstname" name="firstname" class="form-control" placeholder="First Name" required="required"  data-error="Name is required.">
+              <div class="help-block with-errors"></div>
+                
             </div>
             <div class="form-group col-md-6">
-              <input id="form_name1" type="text" for="lastname" name="lastname" class="form-control" placeholder="Last Name" required="required" data-error="Name is required.">
-              <div class="help-block with-errors"></div>
+              <input id="form_name1" type="text" for="lastname" name="lastname" class="form-control" placeholder="Last Name"  data-error="Name is required.">
             </div>
             <div class="form-group col-md-12">
               <input id="form_email" type="email" for="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
