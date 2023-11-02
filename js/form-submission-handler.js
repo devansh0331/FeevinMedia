@@ -66,12 +66,13 @@
     }
 
     disableAllButtons(form);
-    var url = form.action;
-    console.log(url);
+    // var url = form.action;
+    const url = "http://localhost:5000/sendmail";
+    // console.log(url);
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
     xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         form.reset();

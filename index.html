@@ -84,8 +84,42 @@
          .header-middle{
           background: #d9f3b9;
         }
+        .popUpOut{
+          width: 100%;
+          background: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 1rem;
+          position: fixed;
+            top: 0;
+            left: 0;
+          z-index: 10000;
+          display: none;
+          
 
-       
+        }
+        .popUpOut p> span{
+
+          font-weight: bold;
+          padding: 0.5rem;
+          /* border-radius: 50%; */
+          /* border: 1px solid white; */
+          margin-left: 1rem;
+          cursor: pointer;
+
+          }
+
+
+        .submitPopup{
+         color: white;
+          /* width: 100%; */
+          
+          text-align: center;
+
+
+        }
 
          @media (max-width:576px){
             .header-top{
@@ -146,6 +180,12 @@
 
 
         <!--header start-->
+        <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
 
         <header id="site-header" class="header">
             <!-- <div class="header-top">
@@ -332,6 +372,7 @@
     </div>
   </div>
 </section>
+<hr style="color: #407302; height: 5px;" >
 
 
 <!--body content start-->
@@ -344,7 +385,17 @@
     <div class="row">
       <div class="col-md-8">
         <div class="contact-main white-bg p-5 box-shadow" style="height: 500px">
-          <form id="contact-form" class="row gform"  method="post" data-email="ca.caganesh@gmail.com" action="https://script.google.com/macros/s/AKfycbzHgMq43woLefosaAhgRK65SumrYEK94qgrhvZQsRzlzOZ_h-ddE_Rnusl2NSIQ0S95/exec" novalidate="true">
+          <!-- <form id="contact-form" class="row gform" onsubmit="sendEmail()" method="post" data-email="devanshshrivastava07@gmail.com" action="http://localhost:5000/sendmail" novalidate="true"> -->
+            <!--  action="https://script.google.com/macros/s/AKfycbzHgMq43woLefosaAhgRK65SumrYEK94qgrhvZQsRzlzOZ_h-ddE_Rnusl2NSIQ0S95/exec" -->
+          <!-- <form id="contact-form" class="row gform" method ="POST" onsubmit="emailSend();event.preventDefault()" > -->
+          <form method ="POST" action="https://formsubmit.io/send/d811ddd2-5622-4eca-81b1-6b1e160387d4"  id="contact-form" class="row gform" >
+            <div class="popUpOut" id="popUpOut">
+
+              <p class="submitPopup" >Thank you for connecting us! Our team will contact you shortly. <span id="close">X</span> </p>
+              <!-- <button>OK</button> -->
+            </div>
+           
+            <input name="_redirect" type="hidden" id="name" value="http://127.0.0.1:5500/index.html">
             <div id="formmessage"></div>
             <div class="form-group col-md-6 has-error has-danger">
               <input id="form_name" type="text" for="firstname" name="firstname" class="form-control" placeholder="First Name" required="required"  data-error="Name is required.">
@@ -381,7 +432,7 @@
               <div class="help-block with-errors"></div>
             </div>
             <div class="col-md-12 text-center mt-4">
-              <button class="btn"><span>Send Messages</span>
+              <button  class="btn"><span>Send Messages</span>
               </button>
             </div>
           </form>
@@ -398,7 +449,7 @@
     <div class="mapNew" style="height: 500px">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.0250837202225!2d77.22886559999999!3d28.5990243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d18a05223d%3A0x2dde599774fb3be6!2sJMRK%20Legal%20Associates!5e0!3m2!1sen!2sin!4v1698256379453!5m2!1sen!2sin"
-        width="600" height="450" style="border:0; margin-top: 10px;" allowfullscreen="" loading="lazy"></iframe>
+        width="600" height="450" style="border:0; margin-top: 10px;" allowfullscreen=""></iframe>
     </div>
    
   </div>
@@ -507,11 +558,20 @@
 <script src="../js/theme-plugin.js"></script>
 
 
+<!-- <script src="../js/emailSend.js"></script> -->
 
 <!--== theme-script -->
 <script src="../js/theme-script.js"></script>
 
-<script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
+<!-- <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script> -->
+
+<!-- sSMTPJS -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<!-- bootstrapJS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- inject js end -->
 
