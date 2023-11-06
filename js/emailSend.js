@@ -19,7 +19,6 @@ function emailSend() {
       useremail,
       contact,
       message,
-      something: "Sneha",
     }),
   }).then((respone) => respone.json().then((res) => alert(res)));
 

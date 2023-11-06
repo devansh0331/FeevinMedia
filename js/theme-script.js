@@ -290,11 +290,13 @@ function databgcolor() {
 /*------------------------------------
   HT Contact Form
 --------------------------------------*/
-function contactform() {
+function contactform(e) {
   $("#contact-form, #queto-form").validator();
+  e.preventDefault();
   const closebtn = document.getElementById("close");
 
   closebtn.addEventListener("click", function () {
+    console.log("Button is clicked");
     this.parentElement.parentElement.style.display = "none";
   });
 
